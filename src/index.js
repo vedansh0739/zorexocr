@@ -13,8 +13,8 @@ root.render(
   <RecoilRoot>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/ocr" element={<Appocr />} />
+        <Route path="/" element={<Appocr />} />
+
       </Routes>
     </BrowserRouter>
   </RecoilRoot>
