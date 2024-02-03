@@ -34,7 +34,7 @@ const ChatInterface = ({ onFilesSelected }) => {
     if (inputValue.trim()) {
       setMessages([...messages, inputValue]);
       try {
-        fetch("https://127.0.0.1:8000/rag/query/", {
+        fetch("https://backend.zorex.xyz/rag/query/", {
           method: "POST",
           credentials: "include",
           headers: {

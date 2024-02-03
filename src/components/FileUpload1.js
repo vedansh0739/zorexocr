@@ -30,7 +30,7 @@ const FileUpload = ({ onFilesSelected , onClose}) => {
         postfiles.forEach(file => {
             formData.append('files', file);
         });
-        const requestUrl = isOcrEnabled ? 'https://127.0.0.1:8000/rag/uploadocr/' : 'https://127.0.0.1:8000/rag/upload/';
+        const requestUrl = isOcrEnabled ? 'https://backend.zorex.xyz/rag/uploadocr/' : 'https://backend.zorex.xyz/rag/upload/';
         try {
 
             const response = await fetch(requestUrl, {
